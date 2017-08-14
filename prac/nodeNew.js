@@ -12,7 +12,7 @@ var url = require('url');
 var express = require('express');
 var app = express();
 
-app.get(':title', function(req, res){
+app.get('/:title', function(req, res){
   var options = {
     protocol: 'http:',
     host: 'www.omdb.com',
